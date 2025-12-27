@@ -1,5 +1,5 @@
 """
-SolverX Frontend - Streamlit UI for the JEE problem solver
+SolverX Frontend - Streamlit UI for the JEE problem solver with Insights
 """
 
 import streamlit as st
@@ -66,12 +66,56 @@ st.markdown("""
     .solution-container p {
         margin: 1rem 0;
     }
+    
+    /* Flashcard Styles */
+    .flashcard {
+        background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+        border-radius: 16px;
+        padding: 1.5rem;
+        margin: 0.5rem 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-left: 5px solid;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .flashcard:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .flashcard-concept { border-left-color: #667eea; }
+    .flashcard-mistake { border-left-color: #f5576c; }
+    .flashcard-tip { border-left-color: #4facfe; }
+    .flashcard-practice { border-left-color: #38ef7d; }
+    
+    .flashcard-icon {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    .flashcard-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+    .flashcard-content {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.6;
+    }
+    
+    .insights-header {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
 </style>
 """, unsafe_allow_html=True)
 
 # Header
 st.markdown('<h1 class="main-header">🧮 SolverX</h1>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">AI-Powered JEE Mains & Advanced Problem Solver</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-header">AI-Powered JEE Mains & Advanced Problem Solver with Personalized Insights</p>', unsafe_allow_html=True)
 
 # Input method selection
 input_method = st.radio(
@@ -147,10 +191,6 @@ else:  # Image Problem
 
 def render_latex_markdown(content: str):
     """Render markdown with LaTeX using HTML component with MathJax."""
-    import markdown
-    
-    # Convert markdown to HTML (but preserve LaTeX delimiters)
-    # We'll wrap the content in a div and let MathJax handle the math
     html_content = f"""
     <div class="solution-container">
         {content}
@@ -162,6 +202,47 @@ def render_latex_markdown(content: str):
     </script>
     """
     st.markdown(html_content, unsafe_allow_html=True)
+
+
+def get_flashcard_icon(card_type: str) -> str:
+    """Get the icon for each flashcard type."""
+    icons = {
+        "concept": "💡",
+        "mistake": "⚠️",
+        "tip": "🎯",
+        "practice": "📝"
+    }
+    return icons.get(card_type, "📌")
+
+
+def render_flashcards(insights: list):
+    """Render the insights as beautiful flashcards."""
+    st.markdown('<div class="insights-header">💡 Personalized Insights for You</div>', unsafe_allow_html=True)
+    
+    # Create 2x2 grid for flashcards
+    col1, col2 = st.columns(2)
+    
+    for idx, insight in enumerate(insights):
+        card_type = insight.get("type", "concept")
+        icon = get_flashcard_icon(card_type)
+        title = insight.get("title", "Insight")
+        content = insight.get("content", "")
+        
+        html = f"""
+        <div class="flashcard flashcard-{card_type}">
+            <div class="flashcard-title">
+                <span class="flashcard-icon">{icon}</span> {title}
+            </div>
+            <div class="flashcard-content">{content}</div>
+        </div>
+        """
+        
+        if idx % 2 == 0:
+            with col1:
+                st.markdown(html, unsafe_allow_html=True)
+        else:
+            with col2:
+                st.markdown(html, unsafe_allow_html=True)
 
 
 # Display solution
@@ -179,14 +260,20 @@ if st.session_state.solution:
     with tab2:
         st.code(st.session_state.solution["raw_solution"], language=None)
     
+    # Display Insights Flashcards
+    st.divider()
+    if "insights" in st.session_state.solution:
+        render_flashcards(st.session_state.solution["insights"])
+    
     # Clear button
-    if st.button("🗑️ Clear Solution"):
+    st.divider()
+    if st.button("🗑️ Clear Solution", use_container_width=True):
         st.session_state.solution = None
         st.rerun()
 
 # Footer
 st.divider()
 st.markdown(
-    "<p style='text-align: center; color: #888;'>Powered by Gemini 2.5 Pro Preview | Built with ❤️ for JEE Aspirants</p>",
+    "<p style='text-align: center; color: #888;'>Powered by Gemini | Built with ❤️ for JEE Aspirants</p>",
     unsafe_allow_html=True
 )

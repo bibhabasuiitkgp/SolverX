@@ -5,7 +5,7 @@ SolverX Backend - FastAPI server for the JEE problem solver
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
 import base64
 
 from agent import solve_problem
@@ -26,9 +26,16 @@ class TextProblemRequest(BaseModel):
     problem_text: str
 
 
+class InsightCard(BaseModel):
+    title: str
+    content: str
+    type: str
+
+
 class SolutionResponse(BaseModel):
     raw_solution: str
     formatted_solution: str
+    insights: List[InsightCard]
 
 
 @app.get("/")
