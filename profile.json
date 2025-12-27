@@ -1,0 +1,743 @@
+{
+    "student_id": "STU_001",
+    "basic_info": {
+        "name": "Rahul Sharma",
+        "email": "rahul.sharma@example.com",
+        "phone": "+91-9876543210",
+        "date_of_birth": "2007-03-15",
+        "class": "12",
+        "school": "Delhi Public School",
+        "city": "New Delhi",
+        "target_exam": "JEE_ADVANCED",
+        "target_year": 2025,
+        "preparation_start_date": "2024-04-01",
+        "profile_created_at": "2024-04-01T10:30:00Z",
+        "last_active": "2025-12-27T14:30:00Z"
+    },
+    "psychometric_profile": {
+        "test_taken_at": "2024-04-05T09:00:00Z",
+        "test_version": "v2.1",
+        "cognitive_abilities": {
+            "analytical_reasoning": {
+                "score": 78,
+                "percentile": 85,
+                "level": "high"
+            },
+            "spatial_visualization": {
+                "score": 65,
+                "percentile": 72,
+                "level": "medium"
+            },
+            "numerical_aptitude": {
+                "score": 82,
+                "percentile": 90,
+                "level": "high"
+            },
+            "logical_thinking": {
+                "score": 75,
+                "percentile": 80,
+                "level": "high"
+            },
+            "pattern_recognition": {
+                "score": 70,
+                "percentile": 76,
+                "level": "medium"
+            },
+            "abstract_reasoning": {
+                "score": 68,
+                "percentile": 74,
+                "level": "medium"
+            },
+            "working_memory": {
+                "score": 72,
+                "percentile": 78,
+                "level": "medium"
+            },
+            "processing_speed": {
+                "score": 80,
+                "percentile": 88,
+                "level": "high"
+            }
+        },
+        "learning_style": {
+            "visual": 0.7,
+            "auditory": 0.4,
+            "kinesthetic": 0.5,
+            "reading_writing": 0.8,
+            "dominant_style": "reading_writing"
+        },
+        "personality_traits": {
+            "persistence": 75,
+            "stress_tolerance": 60,
+            "self_discipline": 70,
+            "goal_orientation": 85,
+            "adaptability": 65
+        },
+        "study_preferences": {
+            "optimal_study_duration_mins": 90,
+            "preferred_time_of_day": "morning",
+            "focus_span_mins": 45,
+            "break_preference_mins": 10
+        }
+    },
+    "subject_performance": {
+        "physics": {
+            "overall_score": 68.5,
+            "total_questions_attempted": 245,
+            "correct": 167,
+            "incorrect": 78,
+            "accuracy_percentage": 68.16,
+            "average_time_per_question_secs": 120,
+            "difficulty_breakdown": {
+                "easy": {
+                    "attempted": 80,
+                    "correct": 72,
+                    "accuracy": 90.0
+                },
+                "medium": {
+                    "attempted": 100,
+                    "correct": 65,
+                    "accuracy": 65.0
+                },
+                "hard": {
+                    "attempted": 65,
+                    "correct": 30,
+                    "accuracy": 46.15
+                }
+            },
+            "chapters": {
+                "kinematics": {
+                    "score": 72.5,
+                    "questions_attempted": 35,
+                    "correct": 25,
+                    "accuracy": 71.4,
+                    "last_attempted": "2025-12-26T18:30:00Z",
+                    "topic_tags": {
+                        "relative_motion": {
+                            "score": 45,
+                            "strength": "weak",
+                            "attempts": 8,
+                            "correct": 3
+                        },
+                        "graph_based_problems": {
+                            "score": 80,
+                            "strength": "strong",
+                            "attempts": 10,
+                            "correct": 8
+                        },
+                        "projectile_motion": {
+                            "score": 75,
+                            "strength": "medium",
+                            "attempts": 12,
+                            "correct": 9
+                        },
+                        "motion_in_2d": {
+                            "score": 60,
+                            "strength": "weak",
+                            "attempts": 5,
+                            "correct": 3
+                        }
+                    }
+                },
+                "laws_of_motion": {
+                    "score": 65.0,
+                    "questions_attempted": 40,
+                    "correct": 26,
+                    "accuracy": 65.0,
+                    "last_attempted": "2025-12-25T16:00:00Z",
+                    "topic_tags": {
+                        "friction": {
+                            "score": 55,
+                            "strength": "weak",
+                            "attempts": 12,
+                            "correct": 6
+                        },
+                        "free_body_diagram": {
+                            "score": 85,
+                            "strength": "strong",
+                            "attempts": 15,
+                            "correct": 13
+                        },
+                        "pseudo_forces": {
+                            "score": 50,
+                            "strength": "weak",
+                            "attempts": 8,
+                            "correct": 4
+                        },
+                        "constraint_relations": {
+                            "score": 60,
+                            "strength": "weak",
+                            "attempts": 5,
+                            "correct": 3
+                        }
+                    }
+                },
+                "work_energy_power": {
+                    "score": 78.0,
+                    "questions_attempted": 30,
+                    "correct": 23,
+                    "accuracy": 76.67,
+                    "last_attempted": "2025-12-24T14:00:00Z",
+                    "topic_tags": {
+                        "work_energy_theorem": {
+                            "score": 82,
+                            "strength": "strong",
+                            "attempts": 10,
+                            "correct": 8
+                        },
+                        "conservation_of_energy": {
+                            "score": 75,
+                            "strength": "medium",
+                            "attempts": 12,
+                            "correct": 9
+                        },
+                        "power_problems": {
+                            "score": 70,
+                            "strength": "medium",
+                            "attempts": 8,
+                            "correct": 6
+                        }
+                    }
+                },
+                "rotational_mechanics": {
+                    "score": 55.0,
+                    "questions_attempted": 25,
+                    "correct": 14,
+                    "accuracy": 56.0,
+                    "last_attempted": "2025-12-23T10:00:00Z",
+                    "topic_tags": {
+                        "moment_of_inertia": {
+                            "score": 60,
+                            "strength": "weak",
+                            "attempts": 8,
+                            "correct": 5
+                        },
+                        "angular_momentum": {
+                            "score": 50,
+                            "strength": "weak",
+                            "attempts": 10,
+                            "correct": 5
+                        },
+                        "rolling_motion": {
+                            "score": 45,
+                            "strength": "weak",
+                            "attempts": 7,
+                            "correct": 4
+                        }
+                    }
+                }
+            }
+        },
+        "chemistry": {
+            "overall_score": 74.2,
+            "total_questions_attempted": 210,
+            "correct": 156,
+            "incorrect": 54,
+            "accuracy_percentage": 74.29,
+            "average_time_per_question_secs": 90,
+            "difficulty_breakdown": {
+                "easy": {
+                    "attempted": 70,
+                    "correct": 65,
+                    "accuracy": 92.86
+                },
+                "medium": {
+                    "attempted": 90,
+                    "correct": 62,
+                    "accuracy": 68.89
+                },
+                "hard": {
+                    "attempted": 50,
+                    "correct": 29,
+                    "accuracy": 58.0
+                }
+            },
+            "chapters": {
+                "chemical_bonding": {
+                    "score": 80.0,
+                    "questions_attempted": 30,
+                    "correct": 24,
+                    "accuracy": 80.0,
+                    "last_attempted": "2025-12-27T11:00:00Z",
+                    "topic_tags": {
+                        "molecular_orbital_theory": {
+                            "score": 75,
+                            "strength": "medium",
+                            "attempts": 10,
+                            "correct": 7
+                        },
+                        "vsepr_theory": {
+                            "score": 85,
+                            "strength": "strong",
+                            "attempts": 12,
+                            "correct": 10
+                        },
+                        "hybridization": {
+                            "score": 82,
+                            "strength": "strong",
+                            "attempts": 8,
+                            "correct": 7
+                        }
+                    }
+                },
+                "electrochemistry": {
+                    "score": 65.0,
+                    "questions_attempted": 25,
+                    "correct": 16,
+                    "accuracy": 64.0,
+                    "last_attempted": "2025-12-26T15:00:00Z",
+                    "topic_tags": {
+                        "nernst_equation": {
+                            "score": 55,
+                            "strength": "weak",
+                            "attempts": 10,
+                            "correct": 5
+                        },
+                        "electrolysis": {
+                            "score": 70,
+                            "strength": "medium",
+                            "attempts": 8,
+                            "correct": 6
+                        },
+                        "galvanic_cells": {
+                            "score": 75,
+                            "strength": "medium",
+                            "attempts": 7,
+                            "correct": 5
+                        }
+                    }
+                },
+                "organic_chemistry_basics": {
+                    "score": 78.0,
+                    "questions_attempted": 35,
+                    "correct": 27,
+                    "accuracy": 77.14,
+                    "last_attempted": "2025-12-25T17:00:00Z",
+                    "topic_tags": {
+                        "iupac_nomenclature": {
+                            "score": 90,
+                            "strength": "strong",
+                            "attempts": 12,
+                            "correct": 11
+                        },
+                        "isomerism": {
+                            "score": 70,
+                            "strength": "medium",
+                            "attempts": 10,
+                            "correct": 7
+                        },
+                        "reaction_mechanisms": {
+                            "score": 68,
+                            "strength": "medium",
+                            "attempts": 13,
+                            "correct": 9
+                        }
+                    }
+                }
+            }
+        },
+        "mathematics": {
+            "overall_score": 71.8,
+            "total_questions_attempted": 280,
+            "correct": 201,
+            "incorrect": 79,
+            "accuracy_percentage": 71.79,
+            "average_time_per_question_secs": 150,
+            "difficulty_breakdown": {
+                "easy": {
+                    "attempted": 90,
+                    "correct": 82,
+                    "accuracy": 91.11
+                },
+                "medium": {
+                    "attempted": 120,
+                    "correct": 82,
+                    "accuracy": 68.33
+                },
+                "hard": {
+                    "attempted": 70,
+                    "correct": 37,
+                    "accuracy": 52.86
+                }
+            },
+            "chapters": {
+                "calculus": {
+                    "score": 75.0,
+                    "questions_attempted": 50,
+                    "correct": 37,
+                    "accuracy": 74.0,
+                    "last_attempted": "2025-12-27T12:00:00Z",
+                    "topic_tags": {
+                        "limits": {
+                            "score": 85,
+                            "strength": "strong",
+                            "attempts": 12,
+                            "correct": 10
+                        },
+                        "derivatives": {
+                            "score": 78,
+                            "strength": "medium",
+                            "attempts": 15,
+                            "correct": 12
+                        },
+                        "integration": {
+                            "score": 65,
+                            "strength": "weak",
+                            "attempts": 18,
+                            "correct": 11
+                        },
+                        "differential_equations": {
+                            "score": 55,
+                            "strength": "weak",
+                            "attempts": 5,
+                            "correct": 3
+                        }
+                    }
+                },
+                "coordinate_geometry": {
+                    "score": 70.0,
+                    "questions_attempted": 40,
+                    "correct": 28,
+                    "accuracy": 70.0,
+                    "last_attempted": "2025-12-26T19:00:00Z",
+                    "topic_tags": {
+                        "straight_lines": {
+                            "score": 80,
+                            "strength": "strong",
+                            "attempts": 12,
+                            "correct": 10
+                        },
+                        "circles": {
+                            "score": 72,
+                            "strength": "medium",
+                            "attempts": 10,
+                            "correct": 7
+                        },
+                        "parabola": {
+                            "score": 60,
+                            "strength": "weak",
+                            "attempts": 8,
+                            "correct": 5
+                        },
+                        "ellipse": {
+                            "score": 55,
+                            "strength": "weak",
+                            "attempts": 5,
+                            "correct": 3
+                        },
+                        "hyperbola": {
+                            "score": 50,
+                            "strength": "weak",
+                            "attempts": 5,
+                            "correct": 2
+                        }
+                    }
+                },
+                "algebra": {
+                    "score": 72.0,
+                    "questions_attempted": 45,
+                    "correct": 32,
+                    "accuracy": 71.11,
+                    "last_attempted": "2025-12-25T20:00:00Z",
+                    "topic_tags": {
+                        "quadratic_equations": {
+                            "score": 88,
+                            "strength": "strong",
+                            "attempts": 15,
+                            "correct": 13
+                        },
+                        "complex_numbers": {
+                            "score": 65,
+                            "strength": "weak",
+                            "attempts": 12,
+                            "correct": 8
+                        },
+                        "matrices_determinants": {
+                            "score": 60,
+                            "strength": "weak",
+                            "attempts": 10,
+                            "correct": 6
+                        },
+                        "sequences_series": {
+                            "score": 70,
+                            "strength": "medium",
+                            "attempts": 8,
+                            "correct": 5
+                        }
+                    }
+                },
+                "probability": {
+                    "score": 68.0,
+                    "questions_attempted": 30,
+                    "correct": 20,
+                    "accuracy": 66.67,
+                    "last_attempted": "2025-12-24T21:00:00Z",
+                    "topic_tags": {
+                        "permutations_combinations": {
+                            "score": 75,
+                            "strength": "medium",
+                            "attempts": 10,
+                            "correct": 7
+                        },
+                        "conditional_probability": {
+                            "score": 60,
+                            "strength": "weak",
+                            "attempts": 12,
+                            "correct": 7
+                        },
+                        "bayes_theorem": {
+                            "score": 55,
+                            "strength": "weak",
+                            "attempts": 8,
+                            "correct": 4
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "question_history": {
+        "total_questions_solved": 735,
+        "recent_attempts": [
+            {
+                "question_id": "PHY_KIN_045",
+                "chapter": "kinematics",
+                "topic_tags": [
+                    "relative_motion",
+                    "graph_based_problems"
+                ],
+                "difficulty": "hard",
+                "is_correct": false,
+                "time_taken_secs": 180,
+                "attempted_at": "2025-12-27T14:25:00Z",
+                "revisit_flag": true
+            },
+            {
+                "question_id": "MATH_CALC_112",
+                "chapter": "calculus",
+                "topic_tags": [
+                    "integration"
+                ],
+                "difficulty": "medium",
+                "is_correct": true,
+                "time_taken_secs": 145,
+                "attempted_at": "2025-12-27T14:10:00Z",
+                "revisit_flag": false
+            },
+            {
+                "question_id": "CHEM_ORG_078",
+                "chapter": "organic_chemistry_basics",
+                "topic_tags": [
+                    "reaction_mechanisms"
+                ],
+                "difficulty": "hard",
+                "is_correct": true,
+                "time_taken_secs": 95,
+                "attempted_at": "2025-12-27T14:00:00Z",
+                "revisit_flag": false
+            }
+        ],
+        "bookmarked_questions": [
+            "PHY_ROT_015",
+            "MATH_COORD_089",
+            "CHEM_ELEC_034"
+        ],
+        "flagged_for_revision": [
+            "PHY_KIN_045",
+            "MATH_PROB_021",
+            "PHY_LOM_033"
+        ]
+    },
+    "performance_analytics": {
+        "overall_accuracy": 71.29,
+        "overall_score": 71.5,
+        "jee_mains_readiness": 72,
+        "jee_advanced_readiness": 58,
+        "current_streak_days": 15,
+        "longest_streak_days": 45,
+        "total_study_hours": 320.5,
+        "weekly_study_hours_avg": 18.5,
+        "daily_questions_avg": 25,
+        "time_distribution": {
+            "physics_percentage": 35,
+            "chemistry_percentage": 30,
+            "mathematics_percentage": 35
+        },
+        "improvement_trend": {
+            "last_7_days_accuracy_change": 2.5,
+            "last_30_days_accuracy_change": 8.2,
+            "last_7_days_questions_trend": "increasing"
+        },
+        "peak_performance_hours": [
+            9,
+            10,
+            11,
+            16,
+            17
+        ],
+        "weak_topics_priority_list": [
+            {
+                "subject": "physics",
+                "chapter": "rotational_mechanics",
+                "topic": "rolling_motion",
+                "score": 45
+            },
+            {
+                "subject": "physics",
+                "chapter": "kinematics",
+                "topic": "relative_motion",
+                "score": 45
+            },
+            {
+                "subject": "mathematics",
+                "chapter": "coordinate_geometry",
+                "topic": "hyperbola",
+                "score": 50
+            },
+            {
+                "subject": "physics",
+                "chapter": "laws_of_motion",
+                "topic": "pseudo_forces",
+                "score": 50
+            },
+            {
+                "subject": "chemistry",
+                "chapter": "electrochemistry",
+                "topic": "nernst_equation",
+                "score": 55
+            }
+        ],
+        "strong_topics_list": [
+            {
+                "subject": "chemistry",
+                "chapter": "organic_chemistry_basics",
+                "topic": "iupac_nomenclature",
+                "score": 90
+            },
+            {
+                "subject": "mathematics",
+                "chapter": "algebra",
+                "topic": "quadratic_equations",
+                "score": 88
+            },
+            {
+                "subject": "chemistry",
+                "chapter": "chemical_bonding",
+                "topic": "vsepr_theory",
+                "score": 85
+            },
+            {
+                "subject": "physics",
+                "chapter": "laws_of_motion",
+                "topic": "free_body_diagram",
+                "score": 85
+            },
+            {
+                "subject": "mathematics",
+                "chapter": "calculus",
+                "topic": "limits",
+                "score": 85
+            }
+        ]
+    },
+    "mock_test_history": {
+        "total_mocks_taken": 8,
+        "tests": [
+            {
+                "test_id": "MOCK_JEE_MAINS_008",
+                "test_type": "JEE_MAINS",
+                "taken_at": "2025-12-22T09:00:00Z",
+                "total_marks": 300,
+                "marks_obtained": 215,
+                "percentile": 94.5,
+                "physics_score": 72,
+                "chemistry_score": 78,
+                "mathematics_score": 65,
+                "time_taken_mins": 175
+            },
+            {
+                "test_id": "MOCK_JEE_ADV_003",
+                "test_type": "JEE_ADVANCED",
+                "taken_at": "2025-12-15T09:00:00Z",
+                "total_marks": 360,
+                "marks_obtained": 145,
+                "percentile": 85.2,
+                "physics_score": 48,
+                "chemistry_score": 55,
+                "mathematics_score": 42,
+                "time_taken_mins": 175
+            }
+        ],
+        "average_mains_percentile": 92.8,
+        "average_advanced_percentile": 78.5
+    },
+    "goals_and_targets": {
+        "target_jee_mains_rank": 5000,
+        "target_jee_advanced_rank": 3000,
+        "target_daily_questions": 30,
+        "target_weekly_study_hours": 25,
+        "current_goals": [
+            {
+                "goal_id": "GOAL_001",
+                "description": "Complete rotational mechanics chapter",
+                "target_date": "2025-01-05",
+                "progress_percentage": 60,
+                "status": "in_progress"
+            },
+            {
+                "goal_id": "GOAL_002",
+                "description": "Improve relative motion accuracy to 70%",
+                "target_date": "2025-01-10",
+                "progress_percentage": 45,
+                "status": "in_progress"
+            }
+        ],
+        "milestones_achieved": [
+            {
+                "milestone": "Completed 500 questions",
+                "achieved_at": "2025-11-15"
+            },
+            {
+                "milestone": "First mock test 90+ percentile",
+                "achieved_at": "2025-11-22"
+            },
+            {
+                "milestone": "15 day study streak",
+                "achieved_at": "2025-12-27"
+            }
+        ]
+    },
+    "recommendations": {
+        "focus_areas": [
+            "rotational_mechanics",
+            "relative_motion",
+            "integration",
+            "conic_sections"
+        ],
+        "suggested_daily_plan": {
+            "physics_questions": 12,
+            "chemistry_questions": 8,
+            "mathematics_questions": 10,
+            "revision_time_mins": 30
+        },
+        "next_topic_recommendations": [
+            "rolling_motion",
+            "pseudo_forces",
+            "integration_by_parts",
+            "nernst_equation"
+        ],
+        "personalized_tips": [
+            "Your pattern recognition is strong - leverage this for organic chemistry mechanisms",
+            "Focus on spatial visualization for rotational mechanics problems",
+            "Take regular breaks - your optimal focus is 45 mins"
+        ]
+    },
+    "engagement_metrics": {
+        "total_sessions": 145,
+        "average_session_duration_mins": 55,
+        "last_week_active_days": 6,
+        "preferred_study_time": "9:00-12:00",
+        "notifications_preference": "enabled",
+        "reminder_time": "08:00"
+    }
+}
